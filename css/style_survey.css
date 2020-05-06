@@ -1,0 +1,68 @@
+body{
+    width:95vw;
+    background: no-repeat url('../img/chess.jpg');
+    background-size:220%;    
+}
+
+h1{
+    text-align: center;
+    font-size:4vw;
+    color:blue;
+}
+
+#main p{
+    font-size:2vw;
+    color:blue;
+}
+
+#description{
+    text-align: center;
+    font-size:2vw;   
+}
+
+#survey-form{
+    border: 2px solid rgb(77, 206, 245);
+    background-color:rgb(77, 206, 245);
+    border-radius: 3%;
+    width:50vw;
+    height:105vw;
+    display:block;
+    opacity:0.8;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#name_area input, #email_area input, #elo_area input{
+    background-color:white;
+    color:gray;
+    border: 2px solid white;
+    width:40vw;
+}
+#text_area{
+    align-items: center;   
+}
+#explain{
+    width:90%
+}
+
+#submit_area{
+    text-align: center;
+}
+
+#submit{
+    width:20vw;
+    height:5vw;
+    font-size:3vw;
+    background-color: rgb(55, 168, 26);
+}
+
+label, p{
+    font-size:2vw;
+    color:blue;
+}
+
+div{
+    padding-left:3vw;
+    text-align: left;
+    margin-bottom:3vw;   
+}

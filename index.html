@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>
+            Survey Form on chess
+        </title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/style_survey.css">
+
+    </head>
+
+    <body id="main" >   
+        <!-- title area -->  
+       <h1 id="title">What are your tastes in chess ?</h1>
+        
+        <!-- description area --> 
+        <p id="description">A survey to know your preferences in chess</p>
+        
+        <!-- form area --> 
+        <form action="/formulaire" id="survey-form">
+            <!-- name area --> 
+            <div id="name_area" >                
+                <label for="name-label" id="name-label"><p>Name</p>
+                <input type="text" placeholder="Enter your name" id="name" required>
+                </label>
+            </div>
+            <!-- Email area --> 
+            <div id="email_area">
+                <label for="email-label" id="email-label"><p>Email</p>
+                <input type="email" placeholder="Enter your Email" id="email" required>
+                </label>
+            </div>
+            <!-- Elo area --> 
+            <div id="elo_area">
+                <label for="number-label" id="number-label"><p>Elo (between 0 and 3000)</p>
+                <input type="number" placeholder="Elo rating" id="number" min="0" max="3000" required>
+                </label>
+            </div>
+            <!-- Dropdown area --> 
+            <div id="dropdown_area">
+                <label for="dropdown-label">
+                    <p>Which phase of the game do you prefer?</p>
+                </label>
+                <select id="dropdown">
+                <option value="opening">opening</option>
+                <option value="middlegame">middlegame</option>
+                <option value="ending">ending</option>
+                <option value="no_preference">no preference</option>
+                </select>
+            </div>
+            <!-- Radio boxes area --> 
+            <div id=radio_boxes_area>
+                    <p>What is your style of play?</p>
+                    <label for="tactical-label">
+                        <input type="radio" id="tactical" value="tactical" name="choice">
+                        tactical                 
+                    </label>
+                    <label for="positional-label">
+                        <input type="radio" id="positional" value="positional"name="choice">
+                        positional                       
+                    </label>
+                    <label for="mixed-label">
+                        <input type="radio" id="mixed" value="mixed"name="choice">
+                        mixed                      
+                    </label>
+                    <label for="no_party_style-label">                    
+                        <input type="radio" id="no_party_style" value="no_party_style"name="choice" checked>
+                        no party style !!                     
+                    </label>
+            </div>
+            <!-- Text area -->
+            <div id=text_area>
+                <label for="text_area_label">Can you explain why?
+                    <textarea id="explain" name="texte"
+                        rows="5" cols="45">Enter your explanation here...
+                    </textarea>
+                </label>
+            </div>
+            <!--Checkboxes area -->
+            <div id=checkboxes_area>
+                <p>What do you think of the contribution of computers to chess?</p>
+                <p> <label for="no_opinion-label">
+                        <input type="checkbox" id="no_opinion" value="no_opinion" name="opinion" >
+                        no opinion               
+                </p></label>
+                <p> <label for="obligatory-label">
+                        <input type="checkbox" id="obligatory" value="obligatory"name="opinion">
+                        compulsory for training                      
+                </p></label>
+                <p> <label for="death-label">
+                        <input type="checkbox" id="death" value="death"name="opinion">
+                        death of the game                  
+                </p></label>
+                <p> <label for="interesting-label">                    
+                        <input type="checkbox" id="interesting" value="interesting"name="opinion">
+                        interesting but to handle with care                     
+                </p></label>
+                <p> <label for="future-label">                    
+                        <input type="checkbox" id="future" value="future"name="opinion">
+                        it's the future                  
+                </p></label>
+            </div>
+
+            <!-- Submit area -->
+            <div id=submit_area>
+                <input type="submit" value="Submit" id="submit">
+            </div>
+
+        </form>
+         
+        
+        
+       
+        <!--tribute area -->
+       
+
+    
+
+         <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+    </body>    
+</html>
